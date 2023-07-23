@@ -13,6 +13,19 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- ** Manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- * font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- ? Tailwind custom class -->
     <script>
       tailwind.config = {
@@ -26,15 +39,66 @@
       };
     </script>
   </head>
-  <body>
+
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+  <body class="font-manrope">
     <!-- *================ Start===============* -->
     <!-- *================ End===============* -->
 
     <!-- *================ header Start===============* -->
-    <header>
+    <header class="container mx-auto">
+      <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div>
+            <img src="/images/banner.png" class="max-w-sm" />
 
+            <div class="-mt-16 flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60 rounded-sm">
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <div>
+                <h1 class="text-3xl">5.0</h1>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- *================header End===============* -->
 
+        <!-- *================ main Start===============* -->
+        <main class="container mx-auto">
+    <!-- *================ features section Start===============* -->
+    <section class="text-center my-24">
+      <h2 class="text-5xl font-extrabold mb-5">Our Features Product</h2>
+      <p class="lg:max-w-4xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
+      <!-- * featured tea card container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+
+      </div>
+    </section>
+    <!-- *================ features section Start===============* -->
+
+          <section>
+
+          </section>
+        </main>
+    <!-- *================ main End===============* -->
   </body>
 </html>
